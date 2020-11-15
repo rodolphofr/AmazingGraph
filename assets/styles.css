@@ -4,7 +4,7 @@ body {
 
 h1 {
     color: #D2872C;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 3em;
 }
 
@@ -29,7 +29,7 @@ nav li {
 }
 
 nav a {
-    color: #48484b;
+    color: #48484B;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -38,19 +38,45 @@ nav a:hover {
     color:  #D2872C;
 }
 
+.burger-menu {
+    display: none;
+}
+
+.burger-layer {
+    width: 30px;
+    height: 3px;
+    background:#6F6F75;
+    margin: 0 0 4px;
+}
+
 main {
-    padding: 0 60px;
+    padding: 0 100px;
+}
+
+.team-image {
+    width: 60%;
+    float: right;
+}
+
+.content {
+    width: 40%;
 }
 
 .title {
-    color: #6f6f75;
-    font-weight: 800;
+    color: #6F6F75;
+    font-weight: bold;
     font-size: 5em;
+    line-height: 1.2;
 }
 
 .desc {
-    color: #6f6f75;
+    color: #6F6F75;
     font-size: 2.5em;
+    line-height: 1.2;
+}
+
+.title, .desc {
+    margin: 0 0 0.5em;
 }
 
 .btn-start {
@@ -62,17 +88,61 @@ main {
     background: #D2872C;
     border: none;
     cursor: pointer;
+    margin: 1em 0;
 }
 
 .btn-start:hover {
     transition: 300ms;
-    background: #c8985d;
+    background: #A75D02;
 }
 
-.team-image {
-    width: 60%;
+@media (max-width: 480px) {
+    header {
+        padding: 50px 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    main {
+        padding: 0 20px;
+    }
+
+    .team-image {
+        width: 100%;
+        float: none;
+        margin: 0 0 2em;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2.8em;
+    }
+
+    .desc {
+        font-size: 1.4em;
+    }
+
+    .btn-start {
+        font-size: 1.5em;
+        padding: 5% 30%;   
+    }
+
+    .burger-menu {
+        display: inline-block;
+        position: absolute;
+        top: 15%;
+        right: 0;
+    }
 }
-
-
 
 
