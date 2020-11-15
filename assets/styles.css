@@ -43,7 +43,7 @@ nav a:hover {
 }
 
 .burger-layer {
-    width: 30px;
+    width: 26px;
     height: 3px;
     background:#6F6F75;
     margin: 0 0 4px;
@@ -140,7 +140,7 @@ main {
     .burger-menu {
         display: inline-block;
         position: absolute;
-        top: 15%;
+        top: 4px;
         right: 0;
     }
 }
