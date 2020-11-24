@@ -43,7 +43,7 @@ nav a:hover {
 }
 
 .wrapper-burg > span {
-	display: block;
+  display: block;
   width: 26px;
   height: 3px;
   background: #6f6f75;
@@ -55,11 +55,11 @@ main {
 }
 
 .wrapper-img {
-	position: absolute;
-	width: 55%;
-	top: 30px;
-	right: 10%;
-	z-index: 0;
+  position: absolute;
+  width: 55%;
+  top: 30px;
+  right: 10%;
+  z-index: 0;
 }
 
 .wrapper-img__meet {
@@ -72,7 +72,6 @@ main {
   left: 10%;
   z-index: 1;
 }
-
 
 .wrapper-ctn__title {
   color: #6f6f75;
@@ -124,7 +123,7 @@ main {
     padding: 0 20px;
   }
 
-	.wrapper-img,
+  .wrapper-img,
   .wrapper-ctn {
     position: static;
     width: 100%;
@@ -163,15 +162,15 @@ main {
 }
 
 @media screen and (max-width: 280px) {
-	h1 {
-		font-size: 1.7rem;
-	}
+  h1 {
+    font-size: 1.7rem;
+  }
 
-	.wrapper-ctn__title {
-		font-size: 2rem;
-	}
+  .wrapper-ctn__title {
+    font-size: 2rem;
+  }
 
-	.wrapper-ctn__desc {
+  .wrapper-ctn__desc {
     font-size: 1.3rem;
   }
 }
