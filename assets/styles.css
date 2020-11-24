@@ -1,148 +1,177 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    color: #D2872C;
-    font-weight: bold;
-    font-size: 3em;
+  color: #d2872c;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 header {
-    padding: 80px 60px;
+  padding: 80px 60px;
 }
 
-.header-content {
-    position: relative;
+.wrapper-head {
+  position: relative;
 }
 
 nav {
-    position: absolute;
-    top: 25%;
-    right: 0;
+  position: absolute;
+  top: 25%;
+  right: 0;
 }
 
 nav li {
-    display: inline;
-    margin: 0 0 0 1em;
-    cursor: pointer;
+  display: inline;
+  margin: 0 0 0 1rem;
+  cursor: pointer;
 }
 
 nav a {
-    color: #48484B;
-    text-decoration: none;
-    font-size: 1.5em;
+  color: #48484b;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
-    color:  #D2872C;
+  color: #d2872c;
 }
 
-.burger-menu {
-    display: none;
+.wrapper-burg {
+  display: none;
 }
 
-.burger-layer {
-    width: 26px;
-    height: 3px;
-    background:#6F6F75;
-    margin: 0 0 4px;
+.wrapper-burg > span {
+	display: block;
+  width: 26px;
+  height: 3px;
+  background: #6f6f75;
+  margin: 0 0 4px;
 }
 
 main {
-    padding: 0 100px;
+  position: relative;
 }
 
-.team-image {
-    width: 60%;
-    float: right;
+.wrapper-img {
+	position: absolute;
+	width: 55%;
+	top: 30px;
+	right: 10%;
+	z-index: 0;
 }
 
-.content {
-    width: 40%;
+.wrapper-img__meet {
+  width: 100%;
 }
 
-.title {
-    color: #6F6F75;
-    font-weight: bold;
-    font-size: 5em;
-    line-height: 1.2;
-}
-
-.desc {
-    color: #6F6F75;
-    font-size: 2.5em;
-    line-height: 1.2;
-}
-
-.title, .desc {
-    margin: 0 0 0.5em;
-}
-
-.btn-start {
-    color: #FFFFFF;
-    font-size: 2.5em;
-    font-weight: 500;
-    padding: 20px 100px;
-    border-radius: 15px;
-    background: #D2872C;
-    border: none;
-    cursor: pointer;
-    margin: 1em 0;
-}
-
-.btn-start:hover {
-    transition: 300ms;
-    background: #A75D02;
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 50px 30px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    nav {
-        display: none;
-    }
-    
-    main {
-        padding: 0 20px;
-    }
-
-    .team-image {
-        width: 100%;
-        float: none;
-        margin: 0 0 2em;
-    }
-
-    .content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .title {
-        font-size: 2.8em;
-    }
-
-    .desc {
-        font-size: 1.4em;
-    }
-
-    .btn-start {
-        font-size: 1.5em;
-        padding: 5% 30%;   
-    }
-
-    .burger-menu {
-        display: inline-block;
-        position: absolute;
-        top: 4px;
-        right: 0;
-    }
+.wrapper-ctn {
+  position: absolute;
+  width: 45%;
+  left: 10%;
+  z-index: 1;
 }
 
 
+.wrapper-ctn__title {
+  color: #6f6f75;
+  font-weight: bold;
+  font-size: 6.4rem;
+  line-height: 1.2;
+}
+
+.wrapper-ctn__desc {
+  color: #6f6f75;
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+.wrapper-ctn__title,
+.wrapper-ctn__desc {
+  margin: 0 0 0.5em;
+}
+
+.wrapper-ctn__btn {
+  color: #ffffff;
+  font-size: 2.5rem;
+  padding: 20px 100px;
+  border-radius: 15px;
+  background: #d2872c;
+  border: none;
+  cursor: pointer;
+  margin: 1em 0;
+}
+
+.wrapper-ctn__btn:hover {
+  background: #a75d02;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 40px 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+	.wrapper-img,
+  .wrapper-ctn {
+    position: static;
+    width: 100%;
+  }
+
+  .wrapper-img__meet {
+    width: 100%;
+    float: none;
+    margin: 0 0 2em;
+  }
+
+  .wrapper-ctn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrapper-ctn__title {
+    font-size: 2.8rem;
+  }
+
+  .wrapper-ctn__desc {
+    font-size: 1.4rem;
+  }
+
+  .wrapper-ctn__btn {
+    font-size: 1.4rem;
+    padding: 5% 30%;
+  }
+
+  .wrapper-burg {
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+	h1 {
+		font-size: 1.7rem;
+	}
+
+	.wrapper-ctn__title {
+		font-size: 2rem;
+	}
+
+	.wrapper-ctn__desc {
+    font-size: 1.3rem;
+  }
+}
