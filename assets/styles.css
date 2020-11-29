@@ -2,18 +2,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  color: #d2872c;
-  font-weight: bold;
-  font-size: 3rem;
-}
-
 header {
   padding: 80px 60px;
 }
 
 .wrapper-head {
   position: relative;
+}
+
+h1 {
+  color: #d2872c;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 nav {
@@ -106,6 +106,20 @@ main {
   background: #a75d02;
 }
 
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .wrapper-ctn__title {
+    font-size: 2rem;
+  }
+
+  .wrapper-ctn__desc {
+    font-size: 1.3rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header {
     padding: 40px 30px;
@@ -131,7 +145,6 @@ main {
 
   .wrapper-img__meet {
     width: 100%;
-    float: none;
     margin: 0 0 2em;
   }
 
@@ -161,16 +174,14 @@ main {
   }
 }
 
-@media screen and (max-width: 280px) {
-  h1 {
-    font-size: 1.7rem;
+@media screen and (min-width: 768px) {
+  .wrapper-burg {
+    display: none;
   }
 
-  .wrapper-ctn__title {
-    font-size: 2rem;
-  }
-
-  .wrapper-ctn__desc {
-    font-size: 1.3rem;
+  nav {
+    display: inline;
   }
 }
+
+
