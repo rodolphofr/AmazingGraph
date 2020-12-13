@@ -11,36 +11,49 @@
 </head>
 
 <body>
-  <header>
-    <div class="wrapper-head">
-      <h1>DevChallenge</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="wrapper-burg">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+  <div class="wrapperSite">
+    <header>
+      <div class="wrapperHeader">
+        <h1>DevChallenge</h1>
+        <nav class="wrapperHeader__menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </header>
 
-  <main>
-    <div class="wrapper-img">
-      <img class="wrapper-img__meet" src="assets/team.jpg" alt="Team meeting picture">
-    </div>
-    <div class="wrapper-ctn">
-      <p class="wrapper-ctn__title">Create amazing graphics</p>
-      <p class="wrapper-ctn__desc">Colaborate and create beautiful graphics with your team</p>
-      <button class="wrapper-ctn__btn">Start now</button>
-    </div>
-  </main>
+      <div class="wrapperBurger">
+        <input id="menuToggle" type="checkbox" value="false" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <nav class="wrapperBurger__menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="wrapperImg">
+        <img class="wrapperImg__meet" src="assets/team.jpg" alt="Team meeting picture">
+      </div>
+      <div class="wrapperCtn">
+        <p class="wrapperCtn__title">Create amazing graphics</p>
+        <p class="wrapperCtn__desc">Colaborate and create beautiful graphics with your team</p>
+        <button class="wrapperCtn__btn">Start now</button>
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>
